@@ -1,11 +1,13 @@
 {
   "name": "flutter-assets-manger",
-  "displayName": "Fam",
+  "displayName": "Flutter-Assets-Manger",
   "description": "Flutter assets manger",
   "version": "0.0.1",
+  "repository": "https://github.com/Tiz-AY/Flutter-Assets-Manger",
   "engines": {
     "vscode": "^1.47.0"
   },
+  "publisher": "xqtiz",
   "categories": [
     "Other"
   ],

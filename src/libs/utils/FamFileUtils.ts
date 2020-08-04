@@ -154,8 +154,8 @@ export default class FamFileUtils{
       else if(stat.isFile() === true && this.getFileSuffix(fsPath.join(workplaceRootPath,fPath)) === 'dart'){ 
         /// dart文件
         let fileContent: string = fs.readFileSync(fsPath.join(workplaceRootPath,fPath), 'utf8');
-        fileContent = fileContent.replace(/\/\*(\s|.)*?\*\//g, '');// 文件内容删除/**/注释
-        fileContent = fileContent.replace(/\/\/[\s\S]*?\n/g, '');// 文件内容删除//注释
+        // fileContent = fileContent.replace(/\/\*(\s|.)*?\*\//g, '');// 文件内容删除/**/注释
+        // fileContent = fileContent.replace(/\/\/[\s\S]*?\n/g, '');// 文件内容删除//注释
         /// 当文件内容含有assets的路径时，删除assetsFilterList列表的项目
         this.assetsFilterList = this.assetsFilterList.filter((assets: string) => {
           return fileContent.indexOf(assets) === -1;
